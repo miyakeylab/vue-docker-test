@@ -5,10 +5,10 @@ services:
     container_name: vue_web
     build: ./docker/web
     ports:
-      - 9090:9090
+      - ${IN_PORT}:${OUT_PORT}
     privileged: true
     volumes:
-      - ./server:/app
+      - ${SEVICE_DIR}:/app
     tty: true
     stdin_open: true
     command: /bin/sh

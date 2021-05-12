@@ -10,3 +10,5 @@ restart:
 	docker compose restart
 vue:
 	docker exec -it vue_web /bin/sh
+env:
+	cp .env.example .env
