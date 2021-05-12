@@ -12,3 +12,5 @@ vue:
 	docker exec -it vue_web /bin/sh
 env:
 	cp .env.example .env
+server:
+	mkdir server
