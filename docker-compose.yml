@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web:
+    container_name: vue_web
+    build: ./docker/web
+    ports:
+      - 9090:9090
+    privileged: true
+    volumes:
+      - ./server:/app
+    tty: true
+    stdin_open: true
+    command: /bin/sh
